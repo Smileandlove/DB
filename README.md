@@ -13,7 +13,7 @@ $ java DBClient
 
 Once the client is running you can enter SQL queries on the command line. Example queries include:
 
-```sql
+```bash
 CREATE DATABASE markbook;
 [OK]
 USE markbook;
@@ -24,7 +24,7 @@ CREATE TABLE marks (name, mark, pass);
 
 When data is added to a table other queries include:
 
-```sql
+```bash
 SELECT * FROM marks;
 [OK]
 id	name	mark	pass
