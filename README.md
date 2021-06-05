@@ -16,8 +16,10 @@ Once the client is running you can enter SQL queries on the command line. Exampl
 ```
 CREATE DATABASE markbook;
 [OK]
+
 USE markbook;
 [OK]
+
 CREATE TABLE marks (name, mark, pass);
 [OK]
 ```
@@ -30,14 +32,17 @@ SELECT * FROM marks;
 id	name	mark	pass
 1	Steve	65	true
 2	Dave	55	true
-3	Bob	35	false
+3	Bob	  35	false
 4	Clive	20	false
+
 UPDATE marks SET mark = 38 WHERE name == 'Clive';
 [OK]
+
 SELECT * FROM marks WHERE name == 'Clive';
 [OK]
 id	name	mark	pass
-4	Clive	38	false
+4	  Clive	 38	  false
+
 DELETE FROM marks WHERE name == 'Dave';
 [OK]
 ```
